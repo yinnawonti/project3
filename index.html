@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Code Review</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link  rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>THE CODE REVIEW</h1>
+  </header>
+  <div class="main">
+    <div class="container">
+      <h3>Signup for our newsletter</h3>
+      <p>Get the latest news on how your code is doing right in our inbox</p>
+    </div>
+    <hr>
+
+    <form>
+      <section class="contact">
+        <fieldset class="field-1">
+          <legend>
+            <h2>Contact Information</h2>
+          </legend>
+
+          <div class="flex-input">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="Full-Name" placeholder="Required" required><br>
+          </div>
+
+          <div class="flex-input">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="Email Address" placeholder="Required" required><br>
+          </div>
+
+          <div class="flex-input">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="Phone number" placeholder="Required" required><br>
+          </div>
+
+          <div class="flex-input">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="street Address" placeholder="Required" required><br>
+          </div>
+
+          <div class="flex-input">
+            <label for="city">City</label>
+            <input type="text" id="city" name="City" placeholder="Required" required><br>
+          </div>
+
+          <div class="arrow-1">
+            <label for="state">State</label><br>
+            <select id="state" required>
+              <option value="" selected disabled="disabled"> State</option>
+              <option value="state">DR</option>
+              <option value="state">DR</option>
+              <option value="state">DR</option>
+            </select> <br>
+          </div>
+
+          <div class="flex-input  zip">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip code" placeholder="Required" required><br>
+          </div>
+        </fieldset>
+      </section>
+
+      <hr class="line2">
+
+      <fieldset class="fieldset-2">
+        <legend>
+          <h2>Newsletter</h2>
+        </legend>
+        <div class="news">
+          <p>Select the newsletter you would like to receive</p>
+
+          <div class="space">
+            <input type="checkbox" id="HTMLnews" name="newsletter" value="HTML">
+            <label for="HTMLnews">HTML News</label><br>
+          </div>
+
+          <div class="space">
+            <input type="checkbox" id="CSS" name="newsletter" value="CSS">
+            <label for="CSS">CSS News</label><br>
+          </div>
+
+          <div class="space">
+            <input type="checkbox" id="javascript" name="newsletter" value="Javascript">
+            <label for="javascript">Javascript News</label>
+          </div>
+
+          <div class="space">
+            <p>Newsletter format</p><br>
+            <input type="radio" id="HTML" name="newsletter-format" value="html">
+            <label for="HTML">HTML</label><br>
+          </div>
+
+          <div class="space">
+            <input type="radio" id="plain" name="newsletter-format" value="text">
+            <label for="plain">Plain text</label>
+          </div>
+          <br>
+          <div class="space">
+            <label for="suggestion">Other topic you'd like to hear about</label>
+            <textarea id="suggestion" name="suggestion" placeholder="Suggestion" required></textarea><br>
+          </div>
+          <button type="submit"> Sign Up</button>
+        </div>
+
+
+      </fieldset>
+
+
+    </form>
+    <footer>
+      <p>Copyright The Code Review </p>
+    </footer>
+  </div>
+
+</body>
+
+</html>

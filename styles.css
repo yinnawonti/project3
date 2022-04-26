@@ -1,0 +1,270 @@
+*{
+    margin:0;
+}
+
+
+body{
+    background-color:white; 
+    font-family: 'Merriweather', serif;
+}
+
+
+
+header{
+    background-color: #2e3947; 
+    padding: 18px 37px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+.main{
+    margin:10px;
+    padding:10px;
+}
+
+.container{
+    margin: 5px 0;
+    padding: 9px 0;
+}
+
+.container h3{
+    color: #3a506e;
+    text-align: center;
+    font-size: clamp(20px, 5vw, 39px);;
+    padding: 0 0 10px 0;
+}
+
+.container p{
+    color: #a7afb9;
+    text-align: center;
+    font-size: clamp(13px, 4.3vw, 32px);
+    padding: 0 8px;
+}
+
+ hr{
+        border:none;
+        border-top:6px solid #344152;
+        border-bottom: 1px solid #344152 ;
+        height:2px;
+        width:100%;
+        margin:auto;
+ }
+
+ /*-------------------Form first section------------------*/
+ .contact{
+    margin:0px;
+    padding-top:10px;
+     background-color: rgb(222, 234, 238) ;
+}
+ 
+ fieldset{
+     border:0;
+ }
+
+ .field-1{
+     padding-right: 0;   
+ }
+
+ legend{
+    color:#344152;
+    padding:10px 0;
+}
+ 
+.field-1 input, select{
+    border:none;
+    border-radius: 0.3em;
+    background-color:#f6f5f8;
+    width: 92%;
+    height: 50px;
+    color:#4c7ea0;
+    margin-top:8px;
+    margin-bottom:8px;
+    margin-left: 5px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+::placeholder{
+    color:#CCD7D0;
+    text-align: right;
+    padding-right:5px;
+    font-size:medium;
+    font-style: italic;
+}
+
+.field-1  label {
+    color:#708486;
+    margin: 0;
+    padding:3px;
+}
+
+select{
+    color :#b2b9b9;
+    padding-left:5px;
+    margin-left: 5px;
+    width:92%;
+    outline-color: #4c7ea0;;
+}
+
+.flex-input{
+    display:flex;
+    flex-direction: column;
+}
+
+        /*------select--------*/
+.arrow-1{
+    display:flex;
+    flex-direction: column;
+}
+
+        /*---transition  effect---*/
+
+ input:focus, textarea:focus, select:focus{
+    outline-color:#4c7ea0;
+    background-color: rgb(255, 252, 215);
+    transition-delay: .2s;
+    transition-duration: .7s;
+ }
+
+
+ #zip{
+     width:50%;
+}
+     
+    /*---hr----*/
+.line2{
+    border:none;
+    border-top:3px solid #344152;
+    height:2px;
+    width:100%;
+    margin:0;
+}
+
+/*-----------------------------Form second section-----------------*/
+
+.fieldset-2{
+    padding: 0;
+    margin-top:30px;
+}
+
+
+.news{
+    padding-left: 7px;
+}
+
+.news p, .space, .space p {
+        color:#4c7ea0;
+        padding:10px 0;
+        font-size:16px;
+}
+
+
+textarea{
+    background-color: #f6f5f8;
+    width: 100%;
+    height: 130px;
+    border: none;
+    border-radius: 0.3em;
+    padding: 0;
+    margin: 14px 0;
+}
+
+textarea::placeholder{
+    padding:20px 0 0 10px;
+    text-align: left;
+    font-size:20px;
+ }
+
+button{
+    background-color: rgb(19, 185, 185);
+    color:rgb(248, 248, 248);
+    width:100%;
+    height: 80px;
+    border:none;
+    border-radius:0.3em;
+    font-size:25px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    padding:8px;
+}
+
+footer p{
+    text-align: center;
+    font-style: italic;
+    color:#708486;
+    padding:30px 0 150px 0;
+}
+
+/*----------------------------------------------------------*/
+
+/*-----------------------desktop view------------------------*/
+
+@media (min-width: 768px) {
+ header h1{
+        font-size:20px;
+    }
+
+.main{
+    padding: 40px 100px 200px 100px;  
+}
+
+.container h3{
+    font-size: clamp(24px, 2.5vw, 50px);
+    padding:0;
+}
+
+.container p{
+    color:#a7afb9;
+    text-align: center;
+    margin:2px 8px 16px 8px;
+    padding: 3px;
+    font-size: clamp(14px, 1.5vw,  20px);
+}
+
+hr{
+    width:100%;
+}
+
+form{
+    margin-right:0;
+    width:100%;
+}
+
+.field-1 label{ 
+    flex: 46%;
+    text-align: left;
+    margin-right:0px;
+    margin-top: 10px;
+    padding-top:27px;
+    
+    
+}
+
+.field-1 input, select{
+    width:130%;
+    margin:8px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.flex-input{
+    display:flex;
+    flex-direction: row;
+}
+
+#zip{
+    width:45%;
+    margin-right: 48%;
+}
+
+.arrow-1{
+    display:flex;
+    flex-direction: row;
+}
+
+      /*---hr---*/
+.line2{
+    width:100%;
+}
+}
