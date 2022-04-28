@@ -62,7 +62,7 @@ header{
      border:0;
  }
 
- .field-1{
+ .contact-fieldset{
      padding-right: 0;   
  }
 
@@ -71,7 +71,7 @@ header{
     padding:10px 0;
 }
  
-.field-1 input, select{
+.contact-fieldset input, select{
     border:none;
     border-radius: 0.3em;
     background-color:#f6f5f8;
@@ -93,7 +93,7 @@ header{
     font-style: italic;
 }
 
-.field-1  label {
+.contact-fieldset  label {
     color:#708486;
     margin: 0;
     padding:3px;
@@ -113,7 +113,7 @@ select{
 }
 
         /*------select--------*/
-.arrow-1{
+.state-select-box{
     display:flex;
     flex-direction: column;
 }
@@ -133,7 +133,7 @@ select{
 }
      
     /*---hr----*/
-.line2{
+.fieldset-divider{
     border:none;
     border-top:3px solid #344152;
     height:2px;
@@ -143,7 +143,7 @@ select{
 
 /*-----------------------------Form second section-----------------*/
 
-.fieldset-2{
+.newsletter-fieldset{
     padding: 0;
     margin-top:30px;
 }
@@ -231,9 +231,16 @@ form{
     width:100%;
 }
 
-.field-1 label{ 
-    flex: 46%;
+.flex-input{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-fieldset label{ 
+    flex: 1;
     text-align: left;
+    white-space: nowrap;
     margin-right:0px;
     margin-top: 10px;
     padding-top:27px;
@@ -241,30 +248,32 @@ form{
     
 }
 
-.field-1 input, select{
-    width:130%;
+.contact-fieldset input, select{
+    flex:3.5;
     margin:8px;
     margin-top: 20px;
     overflow: hidden;
 }
 
-.flex-input{
-    display:flex;
-    flex-direction: row;
+.zip{
+    justify-content: flex-start;
+}
+
+label[for="zip"]{
+    flex: 0 0 21.4%;
 }
 
 #zip{
-    width:25%;
-    margin-right: 59%;
+    flex: 0 0 25%;
 }
 
-.arrow-1{
+.state-select-box{
     display:flex;
     flex-direction: row;
 }
 
       /*---hr---*/
-.line2{
+.fieldset-divider{
     width:100%;
 }
 }
